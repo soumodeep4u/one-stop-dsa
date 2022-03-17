@@ -4,11 +4,11 @@ class TowerOfHanoi {
 
         //base condition//
         if(n == 1) {
-            System.out.println("Move disk "+n+" from "+fromPeg+" to "+toPeg+" using "+auxPeg);
+            System.out.println("Move disk "+n+" from "+fromPeg+" to "+toPeg+" using "+auxPeg+ "from 7");
             return;
         }
         towerOfHanoi(n-1, fromPeg, auxPeg, toPeg);
-        System.out.println("Move disk "+n+" from "+fromPeg+" to "+toPeg+" using "+auxPeg);
+        System.out.println("Move disk "+n+" from "+fromPeg+" to "+toPeg+" using "+auxPeg +"from line 11");
         towerOfHanoi(n-1, auxPeg, toPeg, fromPeg);
     }
 
@@ -21,3 +21,7 @@ class TowerOfHanoi {
         towerOfHanoi(numberOfDisc, fromPeg, toPeg, auxPeg);
     }
 }
+
+n = 3, toh(2, A, C, B)
+n = 2, toh(1, A, B, C)
+n = 1, A
